@@ -24,7 +24,7 @@ sap.ui.define([
             oView.setModel(oJSONModelCountries, "jsonCountries");
 
             var oJSONModelLayout = new sap.ui.model.json.JSONModel();
-            oJSONModelLayout.loadData("./localService/mockdata/Layout.json", false);
+            oJSONModelLayout.loadData("./localService/mockdata/Layouts.json", false);
             oView.setModel(oJSONModelLayout, "jsonLayout");
 
             var oJSONModelConfig = new sap.ui.model.json.JSONModel({

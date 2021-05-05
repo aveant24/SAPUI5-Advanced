@@ -9,7 +9,7 @@
         
             <FlexBox height="65px" alignItems="Center" justifyContent="Center">
                 <items>
-                    <Text text="{odataNorthwind>TitleOfCourtesy} {odataNorthwind>LastName}, {odataNorthwind>FirstName}" class="boldText"/>
+                    <Text text="{odataNorthwind>TitleOfCourtesy} {odataNorthwind>FirstName} {odataNorthwind>LastName}" class="boldText"/>
                 </items>
             </FlexBox>
 
@@ -43,6 +43,7 @@
                         </layoutData>
                     </HBox>
                     <FlexBox direction="Row" alignItems="Start">
+
                         <Text text="{i18n>postalCode}" class="boldText sapUiTinyMarginEnd"/>
                         <Text text="{odataNorthwind>PostalCode}"/>
                         <layoutData>
@@ -64,6 +65,7 @@
             </headerToolbar>
             <Panel id="tableIncidence" class="sapUiNoContentPadding" backgroundDesign="Transparent"></Panel>
         </Panel>
+
         <Panel class="sapUiSiceCompact" backgroundDesign="Transparent" headerText="{i18n>orders}">
             <core:Fragment fragmentName="logaligroup.Employees.fragment.TableOrders" type="XML"/>
         </Panel>
